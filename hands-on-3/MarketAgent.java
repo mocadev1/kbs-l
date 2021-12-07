@@ -1,17 +1,18 @@
 package test;
 
 import net.sf.clipsrules.jni.*;
+
 import jade.core.Agent;
 import jade.core.behaviours.OneShotBehaviour;
 
 public class MarketAgent extends Agent {
 
-    
+    Environment clips;
     
     protected void setup() {
         
         try {
-            Environment clips = new Environment();
+            clips = new Environment();
         } catch (Exception e) {
             //TODO: handle exception
         }
